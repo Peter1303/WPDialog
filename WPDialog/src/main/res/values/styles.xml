@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="@android:style/Theme.Holo.Light">
+	</style>
+    <style name="CustomDialog" parent="@style/Base.Theme">
+        <item name="android:windowAnimationStyle">@style/dialogWindowAnim</item>  
+    </style>
+	
+	<style name="CustomDialogTop" parent="@style/Base.Theme">
+        <item name="android:windowAnimationStyle">@style/dialogWindowAnimTop</item>  
+    </style>
+	
+	<style name="Base.Theme" parent="@android:style/Theme.Holo.Light.Dialog" >
+        <item name="android:windowFrame">@null</item><!--边框-->  
+        <item name="android:windowIsFloating">true</item><!--是否浮现在activity之上-->  
+        <item name="android:windowIsTranslucent">false</item><!--半透明-->  
+        <item name="android:windowNoTitle">true</item><!--无标题-->  
+        <item name="android:backgroundDimEnabled">false</item><!--模糊-->  
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:background">#00000000</item>
+    </style>
+	
+    <style name="dialogWindowAnim" parent="android:Animation" mce_bogus="1">
+        <item name="android:windowEnterAnimation">@anim/dialog_enter_anim</item>
+        <item name="android:windowExitAnimation">@anim/dialog_exit_anim</item>
+    </style>
+	
+	<style name="dialogWindowAnimTop" parent="android:Animation" mce_bogus="1">
+        <item name="android:windowEnterAnimation">@anim/dialog_top_enter_anim</item>
+        <item name="android:windowExitAnimation">@anim/dialog_top_exit_anim</item>
+    </style>
+	
+</resources>

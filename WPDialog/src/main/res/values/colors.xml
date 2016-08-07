@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+	<color name="wp_bg">#171717</color>
+	<color name="wp_bg_pressed">#525252</color>
+	<color name="wp_light_bg">#FFFFFF</color>
+	<color name="wp_light_bg_pressed">#B6B6B6</color>
+	
+</resources>

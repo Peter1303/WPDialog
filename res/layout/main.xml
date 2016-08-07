@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:gravity="center"
+	android:orientation="vertical">
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="vertical"
+		android:gravity="center">
+
+		<EditText
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:hint="标题Title"
+			android:id="@+id/text_title"
+			android:text="标题"/>
+
+		<EditText
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:layout_weight="1.0"
+			android:hint="内容Message"
+			android:id="@+id/text_message"
+			android:text="内容"/>
+
+		<LinearLayout
+			android:layout_height="40dp"
+			android:layout_width="match_parent"
+			android:orientation="horizontal"
+			android:gravity="center">
+
+			<EditText
+				android:layout_height="wrap_content"
+				android:layout_width="match_parent"
+				android:hint="取消CANCLE"
+				android:layout_weight="1.0"
+				android:id="@+id/text_cancle"
+				android:text="取消"/>
+
+			<EditText
+				android:layout_height="wrap_content"
+				android:layout_width="match_parent"
+				android:layout_weight="1.0"
+				android:hint="中间Neutral"
+				android:id="@+id/text_neutral"
+				android:text="中间"/>
+
+			<EditText
+				android:layout_height="wrap_content"
+				android:layout_width="match_parent"
+				android:hint="确定OK"
+				android:layout_weight="1.0"
+				android:id="@+id/text_ok"
+				android:text="确定"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:orientation="horizontal"
+			android:gravity="right|center">
+
+			<LinearLayout
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:orientation="vertical"
+				android:gravity="right|center">
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:text="OnTop"
+					android:layout_width="wrap_content"/>
+
+				<CheckBox
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:id="@+id/dialog_ontop"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:orientation="vertical"
+				android:gravity="right|center">
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:text="Cancelable"
+					android:textAppearance="?android:attr/textAppearanceSmall"
+					android:layout_width="wrap_content"/>
+
+				<CheckBox
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:id="@+id/dialog_cancelable"/>
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+	<Button
+		android:layout_height="wrap_content"
+		android:text="SHOW"
+		android:layout_width="match_parent"
+		android:textColor="@color/textColor"
+		android:id="@+id/dialog_show"/>
+
+	<Button
+		android:layout_height="wrap_content"
+		android:text="SHOW OK BUTTON"
+		android:textColor="@color/textColor"
+		android:layout_width="match_parent"
+		android:id="@+id/dialog_ok"/>
+
+	<Button
+		android:layout_height="wrap_content"
+		android:text="SHOW NEUTRL BUTTON"
+		android:textColor="@color/textColor"
+		android:layout_width="match_parent"
+		android:id="@+id/dialog_neutral"/>
+
+	<Button
+		android:layout_height="wrap_content"
+		android:text="SHOW CANCEL BUTTON"
+		android:textColor="@color/textColor"
+		android:layout_width="match_parent"
+		android:id="@+id/dialog_cancel"/>
+
+	<Button
+		android:layout_height="wrap_content"
+		android:text="LIGHT THEME"
+		android:textColor="@color/textColor"
+		android:layout_width="match_parent"
+		android:id="@+id/dialog_light"/>
+
+	<Button
+		android:layout_height="wrap_content"
+		android:text="SHOW VIEW"
+		android:textColor="@color/textColor"
+		android:layout_width="match_parent"
+		android:id="@+id/dialog_view"/>
+
+</LinearLayout>
+
