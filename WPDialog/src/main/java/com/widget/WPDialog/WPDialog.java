@@ -242,7 +242,7 @@ public class WPDialog
         return this;
     }
 	
-	public WPDialog setondismis(DialogInterface.OnDismissListener listener){
+	public WPDialog setOnDismissListener(DialogInterface.OnDismissListener listener){
 		this.dismissListener=listener;
 		return this;
 	}
